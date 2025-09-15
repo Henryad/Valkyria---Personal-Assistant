@@ -1,0 +1,22 @@
+sounddevice==0.4.6
+numpy==1.26.4
+onnxruntime==1.18.0
+llama-cpp-python==0.2.90
+pydantic==2.8.2
+pyyaml==6.0.2
+pynput==1.7.6
+pydub==0.25.1
+
+
+# Casa
+tinytuya==1.15.2
+flux-led==1.0.6
+
+
+# Outlook (COM)
+pywin32==306
+
+
+# Email opcional
+IMAPClient==3.0
+pyzmail36==1.0.5
