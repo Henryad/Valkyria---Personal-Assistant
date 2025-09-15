@@ -1,6 +1,4 @@
-# Valkyria - Personal-Assistant
-
-**Valkyria — Assistente Pessoal 100% Local (Windows)**
+# Valkyria — Assistente Pessoal 100% Local (Windows)
 
 Este repositório contém um MVP funcional da Valkyria (Val) com:
   
@@ -17,9 +15,6 @@ Este repositório contém um MVP funcional da Valkyria (Val) com:
 -Calendário: Outlook Desktop (COM) — 100% local.
 
 -Ferramentas prontas com nomes dos seus dispositivos: Quarto (Tuya) e Fita de led (MagicHome).
-
-# Valkyria — Assistente Pessoal 100% Local
-
 
 ## Requisitos
 - Windows 10/11, Python 3.10+
