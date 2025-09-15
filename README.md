@@ -18,6 +18,25 @@ Este repositório contém um MVP funcional da Valkyria (Val) com:
 
 -Ferramentas prontas com nomes dos seus dispositivos: Quarto (Tuya) e Fita de led (MagicHome).
 
+# Valkyria — Assistente Pessoal 100% Local
+
+
+## Requisitos
+- Windows 10/11, Python 3.10+
+- **whisper.cpp** (binário + modelo) e **Piper** (binário + voz pt-BR)
+- Microfone configurado
+
+
+## Setup rápido
+```powershell
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+copy config.example.yaml config.yaml # edite IDs/IPs/chaves
+python .\src\jarvis.py
+
+
+
 **Estrutura**
 
         valkyria-assistente-local/
