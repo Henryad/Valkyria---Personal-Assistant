@@ -1,0 +1,74 @@
+assistant:
+name: "Valkyria"
+aliases: ["Val", "Valkyria"]
+
+
+wake:
+mode: "phrase"
+phrase:
+whisper_bin: "tools/whisper/whisper.exe"
+model_path: "tools/whisper/models/ggml-small.bin"
+threads: 4
+
+
+audio:
+sample_rate: 16000
+device: default
+vad_threshold: 0.6
+max_utterance_sec: 12
+
+
+asr:
+whisper_bin: "tools/whisper/whisper.exe"
+model_path: "tools/whisper/models/ggml-medium.bin"
+language: "pt"
+threads: 6
+
+
+llm:
+model_path: "tools/llm/llama-3.1-8b-instruct-q4_k_m.gguf"
+n_ctx: 4096
+n_threads: 8
+temperature: 0.4
+
+
+tts:
+piper_bin: "tools/piper/piper.exe"
+voice: "tools/piper/voices/pt_BR-gabriela-medium.onnx"
+voice_config: "tools/piper/voices/pt_BR-gabriela-medium.onnx.json"
+output_wav: "out.wav"
+
+
+# Dispositivos de casa — ajuste para sua rede
+tuya:
+enabled: true
+devices:
+- name: "Quarto"
+id: "COLE_AQUI_device_id"
+key: "COLE_AQUI_local_key"
+ip: "192.168.1.X"
+dps_switch: 1
+
+
+magichome:
+enabled: true
+devices:
+- name: "Fita de led"
+ip: "192.168.1.Y"
+model: "RGBWW"
+
+
+outlook:
+enabled: true
+max_events: 10
+days_ahead: 7
+
+
+email:
+enabled: false
+imap_host: "imap.gmail.com"
+imap_port: 993
+username: "SEU_EMAIL"
+password: "SENHA_DE_APP"
+folder: "INBOX"
+max_fetch: 20
