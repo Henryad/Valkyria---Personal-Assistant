@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+
+# Config local (não commitar segredos)
+config.yaml
+memory.json
+
+
+# IDE
+.vscode/
+.idea/
+
+
+# Áudio temporário
+out.wav
+*.wav
+
+
+# whisper/piper modelos grandes (mantenha fora ou use LFS)
+tools/whisper/models/
+tools/piper/voices/
